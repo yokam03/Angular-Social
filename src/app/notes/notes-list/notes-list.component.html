@@ -5,7 +5,7 @@
 
 
 <button class="button is-success" (click)="createNote()" [disabled]="content?.length < 2 || content?.length > 200">
-  POST
+  POST<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
 </button>
 <hr>
 <div *ngFor="let note of notes | async">
